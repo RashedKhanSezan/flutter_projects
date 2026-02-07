@@ -1,0 +1,57 @@
+import 'package:chatting_app/widgets/chat_messages.dart';
+import 'package:chatting_app/widgets/new_messages.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/material.dart';
+
+class ChatScreen extends StatefulWidget {
+  const ChatScreen({super.key});
+
+  @override
+  State<ChatScreen> createState() => _ChatScreenState();
+}
+
+class _ChatScreenState extends State<ChatScreen> {
+  void setUpPushNotifications() async {
+    final fcm = FirebaseMessaging.instance;
+
+    await fcm.requestPermission();
+
+    final fToken = await fcm.getToken();
+
+    print(fToken);
+
+    fcm.subscribeToTopic('chatting_app');
+  }
+
+  @override
+  void initState() {
+    super.initState();
+
+    setUpPushNotifications();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('FlutterChat'),
+          actions: [
+            IconButton(
+              onPressed: () {
+                FirebaseAuth.instance.signOut();
+              },
+              icon: Icon(Icons.logout),
+            ),
+          ],
+        ),
+        body: Column(
+          children: [
+            Expanded(
+              child: ChatMessages(),
+            ),
+            NewMessages(),
+          ],
+        ));
+  }
+}
