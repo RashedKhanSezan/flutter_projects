@@ -51,6 +51,6 @@ class ExpenseBucket {
       sum += expense.amount;
     }
 
-    return sum;
+    return sum  ;
   }
 }
