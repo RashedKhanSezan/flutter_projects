@@ -7,6 +7,12 @@ class RecipeController extends GetxController {
   var recipes = <RecipeModel>[].obs;
   var isLoading = true.obs;
 
+  @override
+  void onInit() {
+    fetchRecipe();
+    super.onInit();
+  }
+
   void fetchRecipe() async {
     try {
       isLoading(true);
@@ -14,7 +20,7 @@ class RecipeController extends GetxController {
       if (response.statusCode == 200) {
         var data = jsonDecode(response.body);
 
-        var list = (data['recipe'] as List)
+        var list = (data['recipes'] as List)
             .map((item) => RecipeModel.fromJson(item))
             .toList();
         recipes.assignAll(list);
