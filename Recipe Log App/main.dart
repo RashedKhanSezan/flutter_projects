@@ -1,17 +1,23 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:recipe_log/views/recipe.dart';
+import 'package:genall_shop/views/home_view.dart';
+import 'package:genall_shop/views/login_view.dart';
 
-void main() => runApp(const RecipeLog());
+void main() {
+  runApp(const MyApp());
+}
 
-class RecipeLog extends StatelessWidget {
-  const RecipeLog({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(useMaterial3: true),
-      home: const RecipeScreen(),
+      initialRoute: '/login',
+      getPages: [
+        GetPage(name: '/login', page: () => LoginView()),
+        GetPage(name: '/home', page: () => HomeView()),
+      ],
     );
   }
 }
