@@ -1,0 +1,24 @@
+# Ignore Flutter/Dart build and tool folders
+**/build/
+**/.dart_tool/
+**/.packages
+**/.pub-cache/
+**/.pub/
+
+# Ignore IDE specific files
+**/.idea/
+**/.vscode/
+**/*.iml
+
+# Ignore Platform specific folders (Android, iOS, etc.)
+**/android/
+**/ios/
+**/linux/
+**/macos/
+**/windows/
+**/web/
+
+# Ignore local configuration
+**/local.properties
+**/analysis_options.yaml
+**/pubspec.lock
