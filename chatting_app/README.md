@@ -7,6 +7,7 @@ A high-performance, real-time messaging application built with the Flutter frame
 ## 🚀 Overview
 The **Flutter Chat App** is designed to provide a seamless communication experience. It demonstrates how to integrate multiple Firebase services to build a production-ready mobile application with a focus on clean UI and efficient state management.
 
+
 ## ✨ Key Features
 * **Secure Authentication:** User signup and login via Firebase Auth (Email/Password).
 * **Real-time Synchronization:** Instant message updates across devices using Cloud Firestore.
@@ -23,3 +24,23 @@ The **Flutter Chat App** is designed to provide a seamless communication experie
 | **Storage** | [Firebase Storage](https://firebase.google.com/docs/storage) |
 | **Notifications** | [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging) |
 
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+* Flutter SDK (3.x or higher)
+* Android Studio / VS Code
+* A Firebase Project
+
+### Installation
+**Clone the repository:**
+   ```bash
+   git clone [https://github.com/RashedKhanSezan/flutter_projects.git](https://github.com/RashedKhanSezan/flutter_projects.git)
+
+## 📸 Screenshots
+<p align="center">
+  <img src="https://github.com/RashedKhanSezan/flutter_projects/blob/main/chatting_app/assets/images/ss01.png?raw=true" alt="App Screenshot" width=22%>
+  <img src="https://github.com/RashedKhanSezan/flutter_projects/blob/main/chatting_app/assets/images/ss02.png?raw=true" alt="App Screenshot" width=22%>
+  <img src="https://github.com/RashedKhanSezan/flutter_projects/blob/main/chatting_app/assets/images/ss03.png?raw=true" alt="App Screenshot" width=22%>
+</p>
