@@ -7,6 +7,12 @@ A high-performance, real-time messaging application built with the Flutter frame
 ## 🚀 Overview
 The **Flutter Chat App** is designed to provide a seamless communication experience. It demonstrates how to integrate multiple Firebase services to build a production-ready mobile application with a focus on clean UI and efficient state management.
 
+## 📸 Screenshots
+<p align="center">
+  <img src="assets/images/ss01.png" width="30%" alt="Login Screen">
+  <img src="assets/images/ss02.png" width="30%" alt="Chat List">
+  <img src="assets/images/ss03.png" width="30%" alt="Chat Room">
+</p>
 
 ## ✨ Key Features
 * **Secure Authentication:** User signup and login via Firebase Auth (Email/Password).
@@ -37,10 +43,4 @@ The **Flutter Chat App** is designed to provide a seamless communication experie
 **Clone the repository:**
    ```bash
    git clone [https://github.com/RashedKhanSezan/flutter_projects.git](https://github.com/RashedKhanSezan/flutter_projects.git)
-
-## 📸 Screenshots
-<p align="center">
-  <img src="https://github.com/RashedKhanSezan/flutter_projects/blob/main/chatting_app/assets/images/ss01.png?raw=true" alt="App Screenshot" width=22%>
-  <img src="https://github.com/RashedKhanSezan/flutter_projects/blob/main/chatting_app/assets/images/ss02.png?raw=true" alt="App Screenshot" width=22%>
-  <img src="https://github.com/RashedKhanSezan/flutter_projects/blob/main/chatting_app/assets/images/ss03.png?raw=true" alt="App Screenshot" width=22%>
-</p>
+   cd chatting_app
