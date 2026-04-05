@@ -1,16 +1,42 @@
-# recipe_log
+# 🍳 Recipe Log App
 
-A new Flutter project.
+A beautifully crafted Flutter application to explore, view, and manage recipes with a clean and modern UI.  
+Built with scalability and simplicity in mind, this project demonstrates practical Flutter architecture and UI design.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔍 Browse and explore recipes
+- 📖 View detailed recipe information (ingredients, steps, etc.)
+- 🧭 Smooth navigation between screens
+- 🎨 Clean and modern UI design
+- ⚡ Fast and responsive performance
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📱 Screenshots
+
+<p align="center">
+  <img src="https://github.com/RashedKhanSezan/flutter_projects/blob/main/recipe_log/assets/images/Screenshot1.png" width="22%" />
+  <img src="https://github.com/RashedKhanSezan/flutter_projects/blob/main/recipe_log/assets/images/Screenshot2.png" width="22%" />
+</p>
+
+---
+
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Flutter SDK installed
+- Android Studio / VS Code
+- Emulator or real device
+
+### Installation
+
+```bash
+git clone https://github.com/RashedKhanSezan/flutter_projects.git
+cd flutter_projects/recipe_log
+flutter pub get
+flutter run
